@@ -1,0 +1,38 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Unknown </title></head><body>
+<h1 id="gilded-rose-requirements-specification">Gilded Rose Requirements Specification</h1>
+<p>Hi and welcome to team Gilded Rose. As you know, we are a small inn with a prime location in a
+prominent city ran by a friendly innkeeper named Allison. We also buy and sell only the finest goods.
+Unfortunately, our goods are constantly degrading in <code>Quality</code> as they approach their sell by date.</p>
+<p>We have a system in place that updates our inventory for us. It was developed by a no-nonsense type named
+Leeroy, who has moved on to new adventures. Your task is to add the new feature to our system so that
+we can begin selling a new category of items. First an introduction to our system:</p>
+<ul>
+<li>All <code>items</code> have a <code>SellIn</code> value which denotes the number of days we have to sell the <code>items</code></li>
+<li>All <code>items</code> have a <code>Quality</code> value which denotes how valuable the item is</li>
+<li>At the end of each day our system lowers both values for every item</li>
+</ul>
+<p>Pretty simple, right? Well this is where it gets interesting:</p>
+<ul>
+<li>Once the sell by date has passed, <code>Quality</code> degrades twice as fast</li>
+<li>The <code>Quality</code> of an item is never negative</li>
+<li><strong>"Aged Brie"</strong> actually increases in <code>Quality</code> the older it gets</li>
+<li>The <code>Quality</code> of an item is never more than <code>50</code></li>
+<li><strong>"Sulfuras"</strong>, being a legendary item, never has to be sold or decreases in <code>Quality</code></li>
+<li><strong>"Backstage passes"</strong>, like aged brie, increases in <code>Quality</code> as its <code>SellIn</code> value approaches;<ul>
+<li><code>Quality</code> increases by <code>2</code> when there are <code>10</code> days or less and by <code>3</code> when there are <code>5</code> days or less but</li>
+<li><code>Quality</code> drops to <code>0</code> after the concert</li>
+</ul>
+</li>
+</ul>
+<p>We have recently signed a supplier of conjured items. This requires an update to our system:</p>
+<ul>
+<li><strong>"Conjured"</strong> items degrade in <code>Quality</code> twice as fast as normal items</li>
+</ul>
+<p>Feel free to make any changes to the <code>UpdateQuality</code> method and add any new code as long as everything
+still works correctly. However, do not alter the <code>Item</code> class or <code>Items</code> property as those belong to the
+goblin in the corner who will insta-rage and one-shot you as he doesn't believe in shared code
+ownership (you can make the <code>UpdateQuality</code> method and <code>Items</code> property static if you like, we'll cover
+for you).</p>
+<p>Just for clarification, an item can never have its <code>Quality</code> increase above <code>50</code>, however <strong>"Sulfuras"</strong> is a
+legendary item and as such its <code>Quality</code> is <code>80</code> and it never alters.</p>
+</body></html>

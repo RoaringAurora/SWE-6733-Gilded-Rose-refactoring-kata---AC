@@ -1,0 +1,44 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Unknown </title></head><body>
+<h1 id="gilded-rose-refactoring-kata">Gilded Rose Refactoring Kata</h1>
+<p>You can find out more about this exercise in my YouTube video <a href="https://youtu.be/Mt4XpGxigT4">Why Developers LOVE The Gilded Rose Kata</a>. I also have a video of a worked solution in Java - <a href="https://youtu.be/OdnV8hc9L7I">Gilded Rose Kata, Hands-on</a></p>
+<p>I use this kata as part of my work as a technical coach. I wrote a lot about the coaching method I use in this book <a href="https://leanpub.com/techagilecoach">Technical Agile Coaching with the Samman method</a>. A while back I wrote this article <a href="http://coding-is-like-cooking.info/2013/03/writing-good-tests-for-the-gilded-rose-kata/">"Writing Good Tests for the Gilded Rose Kata"</a> about how you could use this kata in a <a href="https://leanpub.com/codingdojohandbook">coding dojo</a>.</p>
+<h2 id="how-to-use-this-kata">How to use this Kata</h2>
+<p>The simplest way is to just clone the code and start hacking away improving the design. You'll want to look at the <a href="https://github.com/emilybache/GildedRose-Refactoring-Kata/blob/main/GildedRoseRequirements.md">"Gilded Rose Requirements"</a> which explains what the code is for. I strongly advise you that you'll also need some tests if you want to make sure you don't break the code while you refactor.</p>
+<p>You could write some unit tests yourself, using the requirements to identify suitable test cases. I've provided a failing unit test in a popular test framework as a starting point for most languages.</p>
+<p>Alternatively, use the Approval tests provided in this repository. (Read more about that in the section "Text-based Approval Testing").</p>
+<p>The idea of the exercise is to do some deliberate practice, and improve your skills at designing test cases and refactoring. The idea is not to re-write the code from scratch, but rather to practice taking small steps, running the tests often, and incrementally improving the design. </p>
+<p>Please don't send me a pull request with your solution. It can be a bit confusing since GitHub encourages you to do so! Please only send me pull requests if you have a correction or improvement to the starting position. You don't want to spoil the fun of doing the exercise for other people!</p>
+<h3 id="gilded-rose-requirements-in-other-languages">Gilded Rose Requirements in other languages</h3>
+<ul>
+<li><a href="GildedRoseRequirements.md">English</a></li>
+<li><a href="GildedRoseRequirements_es.md">Español</a></li>
+<li><a href="GildedRoseRequirements_fr.md">Français</a></li>
+<li><a href="GildedRoseRequirements_it.md">Italiano</a></li>
+<li><a href="GildedRoseRequirements_jp.md">日本語</a></li>
+<li><a href="GildedRoseRequirements_pt-BR.md">Português</a></li>
+<li><a href="GildedRoseRequirements_ru.txt">Русский</a></li>
+<li><a href="GildedRoseRequirements_th.md">ไทย</a></li>
+<li><a href="GildedRoseRequirements_zh.txt">中文</a></li>
+<li><a href="GildedRoseRequirements_kr.md">한국어</a></li>
+<li><a href="GildedRoseRequirements_de.md">German</a></li>
+<li><a href="GildedRoseRequirements_eu.md">Euskara</a></li>
+</ul>
+<h2 id="text-based-approval-testing">Text-Based Approval Testing</h2>
+<p>Most language versions of this code have a <a href="https://texttest.org">TextTest</a> fixture for Approval testing. For information about this, see the <a href="https://github.com/emilybache/GildedRose-Refactoring-Kata/tree/main/texttests">TextTests README</a></p>
+<h2 id="history-of-the-exercise">History of the exercise</h2>
+<p>This Kata was originally created by Terry Hughes (http://twitter.com/TerryHughes). It is already on GitHub <a href="https://github.com/NotMyself/GildedRose">here</a>. See also <a href="https://iamnotmyself.com/refactor-this-the-gilded-rose-kata/">Bobby Johnson's description of the kata</a>.</p>
+<p>I translated the original C# into a few other languages, (with a little help from my friends!), and slightly changed the starting position. This means I've actually done a small amount of refactoring already compared with the original form of the kata, and made it easier to get going with writing tests by giving you one failing unit test to start with. I also added test fixtures for Text-Based approval testing with TextTest (see <a href="https://github.com/emilybache/GildedRose-Refactoring-Kata/tree/main/texttests">the TextTests</a>)</p>
+<p>As Bobby Johnson points out in his article <a href="https://iamnotmyself.com/why-most-solutions-to-gilded-rose-miss-the-bigger-picture/">"Why Most Solutions to Gilded Rose Miss The Bigger Picture"</a>, it'll actually give you
+better practice at handling a legacy code situation if you do this Kata in the original C#. However, I think this kata
+is also really useful for practicing writing good tests using different frameworks and approaches, and the small changes I've made help with that. I think it's also interesting to compare what the refactored code and tests look like in different programming languages.</p>
+<h2 id="translating-this-code">Translating this code</h2>
+<p>More translations are most welcome! I'm very open for pull requests that translate the starting position into additional languages. </p>
+<p>Please note a translation should ideally include:</p>
+<ul>
+<li>a translation of the production code for 'update_quality' and Item</li>
+<li>one failing unit test complaining that "fixme" != "foo"</li>
+<li>a TextTest fixture, ie a command-line program that runs update_quality on the sample data for the number of days specified.</li>
+</ul>
+<p>Please don't write too much code in the starting position or add too many unit tests. The idea with the one failing unit test is to tempt people to work out how to fix it, discover it wasn't that hard, and now they understand what this test is doing they realize they can improve it.  </p>
+<p>If your programming language doesn't have an easy way to add a command-line interface, then the TextTest fixture is probably not necessary.</p>
+</body></html>
