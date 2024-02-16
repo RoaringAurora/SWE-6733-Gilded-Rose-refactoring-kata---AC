@@ -11,9 +11,10 @@ Our team used C# since it will be utilized in our team project this semester.
 
 # Unit Testing Video
 <https://youtu.be/VOVjA_HixHY>  
-Testing results are visible in test-results.png  
+Testing results are visible in test-results.png
+![test results](test-results.png) 
 Code coverage results are visible in code-coverage.png
-
+![code coverage](code-coverage.png) 
 # Refactoring Video
 <https://youtu.be/rGyqsACGbNY>
 
